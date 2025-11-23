@@ -228,59 +228,53 @@
                 </div>
             </div>
 
-                <section id="pricing" class="content-section">
-            <div class="section-label">03. COMPUTE STRUCTURE</div>
-            <div class="glass-card wide">
-                <h2>>> How the Engine Thinks at Scale</h2>
-                <p class="stat-desc">
-                    Tacitus is not a chatbot with a pretty skin. It is a <strong>stacked inference system</strong>:
-                    multiple knowledge pipelines, specialised agents, a conflict ontology, a graph database and a
-                    retrieval layer working together on top of your communication data.
+              <section id="pricing" class="content-section">
+    <div class="section-label">03. COMPUTE STRUCTURE</div>
+    <div class="glass-card wide">
+        
+        <h2>>> How the Engine Thinks at Scale</h2>
+        <p class="stat-desc">
+            Tacitus is a stacked reasoning system: multiple knowledge pipelines, specialised agents, a conflict ontology, 
+            a graph brain and a retrieval layer working together on top of your real communication data.
+        </p>
+
+        <div class="compute-flow">
+            <div class="flow-step">
+                <span class="flow-number">01</span>
+                <h4>Knowledge Pipelines</h4>
+                <p>
+                    Email, memos, PDFs, minutes and curated feeds are ingested, cleaned, time-anchored and enriched 
+                    with conflict-aware metadata (actors, events, escalation markers).
                 </p>
+                <div class="flow-arrow">⇣</div>
+            </div>
 
-                <div class="grid-4">
-                    <div class="stat-block">
-                        <span class="stat-label">Knowledge Pipelines</span>
-                        <p class="stat-desc">
-                            Read‑only connectors pull in email, memos, minutes, PDFs, curated news feeds and structured
-                            data. Text is normalised, de‑duplicated and enriched with conflict‑aware metadata
-                            (actor hints, time, channel, escalation level). Each pipeline can be tuned to a context:
-                            Syria, a boardroom, a labour dispute, a family business.
-                        </p>
-                    </div>
-                    <div class="stat-block">
-                        <span class="stat-label">Ontology &amp; Graph Agents</span>
-                        <p class="stat-desc">
-                            A dedicated <strong>Ontology Agent</strong> extracts actors, interests, constraints, red lines
-                            and guarantees, and writes them into a property graph. Facts live in vector stores; structure
-                            lives in the graph. This is where Tacitus learns how your conflict actually works.
-                        </p>
-                    </div>
-                    <div class="stat-block">
-                        <span class="stat-label">Casebook Builder</span>
-                        <p class="stat-desc">
-                            A separate agent turns graph snapshots into <strong>case files</strong>: human‑readable
-                            narratives that explain who wants what, where the system is brittle and where common ground
-                            is plausibly available. These become the briefing backbone for diplomats, executives or
-                            mediators.
-                        </p>
-                    </div>
-                    <div class="stat-block">
-                        <span class="stat-label">Resolution Layer</span>
-                        <p class="stat-desc">
-                            Finally, a reasoning agent queries both graph and vectors under your mandate and risk tolerance,
-                            searching for feasible resolution corridors. Only once structure is clear does Tacitus propose
-                            <strong>concrete moves</strong> – a small set of defensible pathways rather than a firehose
-                            of unstructured suggestions.
-                        </p>
-                    </div>
-                </div>
+            <div class="flow-step">
+                <span class="flow-number">02</span>
+                <h4>Ontology & Graph Agents</h4>
+                <p>
+                    A dedicated Ontology Agent extracts actors, interests, constraints and guarantees, writing them 
+                    into a live property graph. Text lives in vectors; structure lives in the graph.
+                </p>
+                <div class="flow-arrow">⇣</div>
+            </div>
 
-                <p class="stat-desc" style="margin-top: 1.5rem;">
-                    For investors and technical teams: this architecture is cloud‑native and composable. In practice,
-                    Tacitus can run as a private deployment in your own VPC, with vector search (for example, Vertex AI
-                    or pgvector) coexisting with a graph engine (for example, Neo4j‑style or equivalent) behind a single
-                    email‑native interface.
+            <div class="flow-step">
+                <span class="flow-number">03</span>
+                <h4>Casebook Builder</h4>
+                <p>
+                    Graph snapshots become concise case files: readable narratives that explain motives, incentives, 
+                    leverage points and the actual structure of the conflict ecosystem.
+                </p>
+                <div class="flow-arrow">⇣</div>
+            </div>
+
+            <div class="flow-step">
+                <span class="flow-number">04</span>
+                <h4>Resolution Layer</h4>
+                <p>
+                    A reasoning agent queries both graph and vector memory under your mandates, identifying 
+                    realistic settlement corridors and concrete moves that fit your risk envelope.
                 </p>
             </div>
 
