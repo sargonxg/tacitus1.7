@@ -7,11 +7,34 @@
     <title>Tacitus | Conflict Intelligence & Resolution Technologies</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- APPS HUB BUTTON STYLE --- */
+        .btn-appshub {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #ffffff;
+            color: #0b0c10;
+            border-radius: 8px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            box-shadow: 0 3px 12px rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.35);
+        }
+        .btn-appshub:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(255,255,255,0.35);
+            opacity: 0.95;
+        }
+    </style>
+
 </head>
 <body>
     <canvas id="neural-canvas"></canvas>
 
-        <nav class="glass-panel">
+    <nav class="glass-panel">
         <div class="logo">
             TACITUS<span class="logo-mark">◳</span><span class="highlight">_</span>
         </div>
@@ -21,12 +44,15 @@
         <div class="nav-links" id="nav-links">
             <a href="index.html">Home</a>
             <a href="platform.html" class="nav-pill nav-conflict">Resolution Engine</a>
-            <a href="polarization.html" class="nav-pill nav-prism">Prism Lab Polarization </a>
+            <a href="polarization.html" class="nav-pill nav-prism">Prism Lab Polarization</a>
             <a href="conflict-graph.html" class="nav-pill nav-ontology">Ontology/Conflict Graph</a>
             <a href="https://concordiadiscors.org" target="_blank" rel="noopener" class="nav-pill nav-magazine">Concordia Discors Magazine</a>
             <a href="analysis.html">Deep Analysis &amp; Research</a>
             <a href="team.html">Who We Are</a>
-            <a href="tacitus_protocol_ascii.pdf" class="btn-whitepaper" target="_blank" rel="noopener">White Paper</a>
+
+            <!-- NEW WHITE BUTTON (replaces White Paper) -->
+            <a href="https://apps.tacitus.me" class="btn-appshub">Acess TACITUS◳ Apps Hub</a>
+
             <a href="mailto:hello@tacitus.me" class="btn-glow">Contact / Book a Demo</a>
         </div>
     </nav>
@@ -53,10 +79,10 @@
 
                     
                     <div class="hero-tags">
-                        <span class="tag">email‑native</span>
-                        <span class="tag">multi‑agent</span>
-                        <span class="tag">RAG‑grounded</span>
-                        <span class="tag">human‑in‑loop</span>
+                        <span class="tag">email-native</span>
+                        <span class="tag">multi-agent</span>
+                        <span class="tag">RAG-grounded</span>
+                        <span class="tag">human-in-loop</span>
                     </div>
 
 
@@ -65,7 +91,7 @@
                             <div class="quad-inner">
                                 <span class="quad-kicker">CONFLICT INTELLIGENCE ENGINE</span>
                                 <p class="quad-text">
-                                    Email‑native conflict analysis for boards, ministries, and teams. Ingests real communication,
+                                    Email-native conflict analysis for boards, ministries, and teams. Ingests real communication,
                                     reconstructs actors, interests, constraints and ZOPA, and returns structured briefs instead
                                     of endless chat transcripts.
                                 </p>
@@ -137,196 +163,3 @@
             and builds a dynamic model of how the conflict is evolving — enabling clarity, traceability, and 
             meaningful intervention across geopolitical, organisational, and personal scales.
         </p>
-
-        <div class="grid-3 stat-cards">
-            <div class="card-cyber small">
-                <h4>Entropy Surface</h4>
-                <p>All documents and messages unified into one coherent field.</p>
-            </div>
-            <div class="card-cyber small">
-                <h4>Signal Extraction</h4>
-                <p>Claims, interests and red lines distilled cleanly from noise.</p>
-            </div>
-            <div class="card-cyber small">
-                <h4>Explainability</h4>
-                <p>Every insight linked to specific evidence — no black boxes.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-        <section id="cases" class="content-section">
-            <div class="section-label">02. DEPLOYMENT SCENARIOS</div>
-            <h2 class="section-heading" style="margin-bottom: 2rem;">>> Where Tacitus Lands</h2>
-            <div class="grid-3">
-                <div class="card-cyber">
-                    <div class="case-vis">
-                        <span class="dot-fact"></span><span class="line-vis"></span><span class="dot-narrative"></span>
-                    </div>
-                    <h4>Diplomatic &amp; Multilateral Mediation</h4>
-                    <p class="case-desc">
-                        <strong>Tacitus:</strong> Ingests back‑channel emails, draft texts, media lines and mission reports around
-                        a peace process or ceasefire. Maps factions, guarantees, spoilers and red lines into a conflict graph,
-                        exposing resolution corridors that respect mandates while reducing the risk of collapse.
-                    </p>
-                </div>
-                <div class="card-cyber">
-                    <div class="case-vis">
-                        <span class="dot-fact"></span><span class="line-vis"></span><span class="dot-shared"></span>
-                    </div>
-                    <h4>Corporate Boards &amp; Founder Disputes</h4>
-                    <p class="case-desc">
-                        <strong>Tacitus:</strong> Reconstructs who holds which risk, authorship and recognition claims across
-                        board emails, investment memos and legal correspondence. Separates positional quarrels over equity
-                        from deeper interests, and identifies ZOPA‑like spaces for governance reform and credit‑sharing.
-                    </p>
-                </div>
-                <div class="card-cyber">
-                    <div class="case-vis">
-                        <span class="dot-fact"></span><span class="line-vis"></span><span class="dot-narrative"></span>
-                    </div>
-                    <h4>Workplace &amp; Union Conflicts</h4>
-                    <p class="case-desc">
-                        <strong>Tacitus:</strong> Reads grievance chains, HR notes and union communications; distinguishes
-                        concrete demands (wages, hours, safety) from symbolic ones (respect, trust, recognition). Surfaces
-                        settlements that meet hard constraints while addressing the underlying narrative of fairness.
-                    </p>
-                </div>
-                <div class="card-cyber">
-                    <div class="case-vis">
-                        <span class="dot-narrative"></span><span class="line-vis"></span><span class="dot-narrative"></span>
-                    </div>
-                    <h4>Regulation, Infrastructure &amp; Public Finance</h4>
-                    <p class="case-desc">
-                        <strong>Tacitus:</strong> Connects ministries, regulators, contractors, auditors and funders into one
-                        conflict graph for major projects. Shows how vetoes, timelines and corruption fears interact, and
-                        helps design phased agreements that keep projects moving without sacrificing oversight.
-                    </p>
-                </div>
-                <div class="card-cyber">
-                    <div class="case-vis">
-                        <span class="dot-fact"></span><span class="line-vis"></span><span class="dot-narrative"></span>
-                    </div>
-                    <h4>Polarized Campaigns &amp; Civic Space</h4>
-                    <p class="case-desc">
-                        <strong>Tacitus:</strong> Uses the Prism Lab pipeline to segment audiences, model echo chambers and detect
-                        narrow overlaps in values. Recommends messages and institutional moves that de‑escalate abstract anger
-                        while preserving meaningful disagreement.
-                    </p>
-                </div>
-                <div class="card-cyber">
-                    <div class="case-vis">
-                        <span class="dot-narrative"></span><span class="line-vis"></span><span class="dot-shared"></span>
-                    </div>
-                    <h4>Family Businesses &amp; Inheritance Disputes</h4>
-                    <p class="case-desc">
-                        <strong>Tacitus:</strong> Treats emails, letters and meeting notes around succession as a small but dense
-                        conflict system. Distinguishes financial claims from generational fears, tracks alliances and resentments,
-                        and suggests options that preserve both continuity of the business and dignity of the people involved.
-                    </p>
-                </div>
-            </div>
-
-              <section id="pricing" class="content-section">
-    <div class="section-label">03. COMPUTE STRUCTURE</div>
-    <div class="glass-card wide">
-        
-        <h2>>> How the Engine Thinks at Scale</h2>
-        <p class="stat-desc">
-            Tacitus is a stacked reasoning system: multiple knowledge pipelines, specialised agents, a conflict ontology, 
-            a graph brain and a retrieval layer working together on top of your real communication data.
-        </p>
-
-        <div class="compute-flow">
-            <div class="flow-step">
-                <span class="flow-number">01</span>
-                <h4>Knowledge Pipelines</h4>
-                <p>
-                    Email, memos, PDFs, minutes and curated feeds are ingested, cleaned, time-anchored and enriched 
-                    with conflict-aware metadata (actors, events, escalation markers).
-                </p>
-                <div class="flow-arrow">⇣</div>
-            </div>
-
-            <div class="flow-step">
-                <span class="flow-number">02</span>
-                <h4>Ontology & Graph Agents</h4>
-                <p>
-                    A dedicated Ontology Agent extracts actors, interests, constraints and guarantees, writing them 
-                    into a live property graph. Text lives in vectors; structure lives in the graph.
-                </p>
-                <div class="flow-arrow">⇣</div>
-            </div>
-
-            <div class="flow-step">
-                <span class="flow-number">03</span>
-                <h4>Casebook Builder</h4>
-                <p>
-                    Graph snapshots become concise case files: readable narratives that explain motives, incentives, 
-                    leverage points and the actual structure of the conflict ecosystem.
-                </p>
-                <div class="flow-arrow">⇣</div>
-            </div>
-
-            <div class="flow-step">
-                <span class="flow-number">04</span>
-                <h4>Resolution Layer</h4>
-                <p>
-                    A reasoning agent queries both graph and vector memory under your mandates, identifying 
-                    realistic settlement corridors and concrete moves that fit your risk envelope.
-                </p>
-            </div>
-
-
-        <footer id="access">
-            <div class="terminal-footer">
-                <p>&gt; system_status: <span class="status-ok">OPERATIONAL</span></p>
-                <br>
-                <a href="mailto:deploy@tacitus.me?subject=Tacitus%20Deployment" class="cmd-link">
-                    root@tacitus:~$ initiate_deployment_sequence
-                </a>
-            </div>
-        </footer>
-    </main>
-
-    <script src="script.js"></script>
-
-    <footer class="site-footer">
-        <div class="footer-inner">
-            <div class="footer-brand">
-                <div class="footer-logo">
-                    TACITUS<span class="logo-mark">◳</span>
-                </div>
-                <p class="footer-tagline">
-                    Tacitus &mdash; Clarity in conflict. Structure in noise.
-                </p>
-            </div>
-            <div class="footer-columns">
-                <div class="footer-col">
-                    <h4>Products</h4>
-                    <a href="platform.html">Engine</a>
-                    <a href="polarization.html">Prism Lab</a>
-                    <a href="conflict-graph.html">Ontology Graph</a>
-                    <a href="https://concordiadiscors.org" target="_blank" rel="noopener">Discors Magazine</a>
-                </div>
-                <div class="footer-col">
-                    <h4>About</h4>
-                    <a href="analysis.html">Deep Analysis &amp; Research</a>
-                    <a href="team.html">Who We Are</a>
-                    <a href="tacitus_protocol_ascii.pdf" target="_blank" rel="noopener">White Paper</a>
-                </div>
-                <div class="footer-col">
-                    <h4>Contact</h4>
-                    <a href="mailto:hello@tacitus.me">hello@tacitus.me</a>
-                    <a href="mailto:deploy@tacitus.me">deploy@tacitus.me</a>
-                </div>
-            </div>
-            <div class="footer-meta">
-                <span>Tacitus.me</span>
-            </div>
-        </div>
-    </footer>
-
-</body>
-</html>
