@@ -8,75 +8,56 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- Elegant Neon Gradient Button -->
     <style>
+        /* --- APPS HUB BUTTON STYLE --- */
         .btn-appshub {
             display: inline-block;
-            padding: 12px 26px;
-            border-radius: 10px;
-            font-family: 'Inter', sans-serif;
-            font-weight: 600;
-            text-decoration: none;
+            padding: 10px 20px;
+            background: #ffffff;
             color: #0b0c10;
-            background: linear-gradient(135deg,
-                rgba(139,233,253,0.95),
-                rgba(189,147,249,0.95),
-                rgba(255,202,128,0.95)
-            );
-            box-shadow:
-                0 0 12px rgba(139,233,253,0.35),
-                0 0 18px rgba(189,147,249,0.25),
-                0 0 24px rgba(255,202,128,0.25);
-            border: 1px solid rgba(255,255,255,0.25);
-            transition: 0.3s ease;
+            border-radius: 8px;
+            font-weight: 600;
+            font-family: 'Inter', sans-serif;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            box-shadow: 0 3px 12px rgba(255,255,255,0.2);
+            border: 1px solid rgba(255,255,255,0.35);
         }
-
         .btn-appshub:hover {
-            transform: translateY(-2px) scale(1.02);
-            box-shadow:
-                0 0 18px rgba(139,233,253,0.55),
-                0 0 26px rgba(189,147,249,0.45),
-                0 0 34px rgba(255,202,128,0.45);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 18px rgba(255,255,255,0.35);
             opacity: 0.95;
         }
-
-        /* Hero CTA spacing */
-        .hero-cta {
-            margin-top: 2rem;
-        }
     </style>
-</head>
 
+</head>
 <body>
     <canvas id="neural-canvas"></canvas>
 
-    <!-- NAV ------------------------------------------------------------- -->
     <nav class="glass-panel">
         <div class="logo">
             TACITUS<span class="logo-mark">◳</span><span class="highlight">_</span>
         </div>
-
         <div class="hamburger" id="hamburger">
             <span></span><span></span><span></span>
         </div>
-
         <div class="nav-links" id="nav-links">
             <a href="index.html">Home</a>
             <a href="platform.html" class="nav-pill nav-conflict">Resolution Engine</a>
             <a href="polarization.html" class="nav-pill nav-prism">Prism Lab Polarization</a>
             <a href="conflict-graph.html" class="nav-pill nav-ontology">Ontology/Conflict Graph</a>
             <a href="https://concordiadiscors.org" target="_blank" rel="noopener" class="nav-pill nav-magazine">Concordia Discors Magazine</a>
-            <a href="analysis.html">Deep Analysis & Research</a>
+            <a href="analysis.html">Deep Analysis &amp; Research</a>
             <a href="team.html">Who We Are</a>
 
-            <!-- NEW BEAUTIFUL NEON GRADIENT BUTTON -->
-            <a href="https://apps.tacitus.me" class="btn-appshub">Enter Tacitus◳ Apps Hub</a>
+            <!-- NEW WHITE BUTTON (replaces White Paper) -->
+            <a href="https://apps.tacitus.me" class="btn-appshub">Access TACITUS◳ Apps Hub</a>
 
             <a href="mailto:hello@tacitus.me" class="btn-glow">Contact / Book a Demo</a>
         </div>
     </nav>
 
-    <!-- HERO ------------------------------------------------------------ -->
+
     <main>
         <section class="hero" id="top">
             <div class="content-wrapper hero-grid">
@@ -87,15 +68,16 @@
                     <h1 class="glitch-text" data-text="CONFLICT IS INFORMATION ASYMMETRY">
                         CONFLICT IS INFORMATION ASYMMETRY
                     </h1>
-
+                    
+                    
                     <p class="subtitle">
-                        Conflict is everywhere: inside boards, ministries, campaigns, and group chats.
-                        Tacitus◳ is a conflict intelligence and resolution layer for people who need clarity
-                        under pressure. It sits on top of your real communication and knowledge pipelines,
-                        maps actors, interests, constraints, and risk, and surfaces narrow corridors of
-                        common ground you can actually act on.
+                        Conflict is everywhere: inside boards, ministries, campaigns, and group chats. Tacitus is a conflict
+                        intelligence and resolution layer for people who need clarity under pressure. It sits on top of your
+                        real communication and knowledge pipelines, maps actors, interests, constraints, and risk, and
+                        surfaces narrow corridors of common ground you can actually act on.
                     </p>
 
+                    
                     <div class="hero-tags">
                         <span class="tag">email-native</span>
                         <span class="tag">multi-agent</span>
@@ -103,9 +85,82 @@
                         <span class="tag">human-in-loop</span>
                     </div>
 
-                    <!-- HERO SECTION CTA — NEON GRADIENT BUTTON -->
-                    <div class="hero-cta">
-                        <a href="https://apps.tacitus.me" class="btn-appshub">Enter Tacitus◳ Apps Hub →</a>
+
+                    <div class="product-quad">
+                        <a href="platform.html" class="product-quad-item quad-engine">
+                            <div class="quad-inner">
+                                <span class="quad-kicker">CONFLICT INTELLIGENCE ENGINE</span>
+                                <p class="quad-text">
+                                    Email-native conflict analysis for boards, ministries, and teams. Ingests real communication,
+                                    reconstructs actors, interests, constraints and ZOPA, and returns structured briefs instead
+                                    of endless chat transcripts.
+                                </p>
+                                <span class="quad-link">View Engine &rarr;</span>
+                            </div>
+                        </a>
+                        <a href="polarization.html" class="product-quad-item quad-prism">
+                            <div class="quad-inner">
+                                <span class="quad-kicker">THE PRISM LAB</span>
+                                <p class="quad-text">
+                                    Polarization and campaigns lab. Maps how arguments land across moral foundations and segments,
+                                    and surfaces narrow bands of consensus language instead of just sharper clashes.
+                                </p>
+                                <span class="quad-link">Explore Prism Lab &rarr;</span>
+                            </div>
+                        </a>
+                        <a href="https://concordiadiscors.org" target="_blank" rel="noopener" class="product-quad-item quad-magazine">
+                            <div class="quad-inner">
+                                <span class="quad-kicker">CONCORDIA DISCORS MAGAZINE</span>
+                                <p class="quad-text">
+                                    Essays on liberty, conscience, and polarization. The philosophical backbone of Tacitus, where
+                                    we test the ontology against real political and cultural conflicts.
+                                </p>
+                                <span class="quad-link">Visit Magazine &rarr;</span>
+                            </div>
+                        </a>
+                        <a href="conflict-graph.html" class="product-quad-item quad-ontology">
+                            <div class="quad-inner">
+                                <span class="quad-kicker">ONTOLOGY GRAPH</span>
+                                <p class="quad-text">
+                                    Live conflict graph of actors, interests, constraints, and guarantees, with overlays to inspect
+                                    risk, veto points, and realistic corridors of agreement.
+                                </p>
+                                <span class="quad-link">Open Graph &rarr;</span>
+                            </div>
+                        </a>
                     </div>
 
-                    <!-- product quad unchanged -->
+
+
+                    </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+      <section id="deficit" class="content-section">
+    <div class="section-label">01. THE PROBLEM LAYER</div>
+    <div class="glass-card wide">
+        <h2>>> The Resolution Deficit</h2>
+
+        <p>
+            The world now produces conflict-relevant information far faster than humans can process it: 
+            emails, internal notes, meeting summaries, memos, reports, statements, and community messages. 
+            The volume accelerates; understanding does not.
+        </p>
+
+        <p>
+            Across sectors, the pattern is identical: mediators, managers, investigators, diplomats, board chairs 
+            and facilitators must resolve disputes while navigating an information environment built for overload. 
+            People still read line-by-line; conflict evolves as a system.
+        </p>
+
+        <p>
+            The <span class="accent">Resolution Deficit</span> is this structural gap. <strong>Tacitus closes it.</strong> 
+            Our conflict-intelligence engine ingests the entire communication surface of a dispute, organises it, 
+            and builds a dynamic model of how the conflict is evolving — enabling clarity, traceability, and 
+            meaningful intervention across geopolitical, organisational, and personal scales.
+        </p>
+
