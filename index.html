@@ -8,27 +8,50 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <style>
-        /* --- APPS HUB BUTTON STYLE --- */
-        .btn-appshub {
-            display: inline-block;
-            padding: 10px 20px;
-            background: #ffffff;
-            color: #0b0c10;
-            border-radius: 8px;
-            font-weight: 600;
-            font-family: 'Inter', sans-serif;
-            text-decoration: none;
-            transition: all 0.25s ease;
-            box-shadow: 0 3px 12px rgba(255,255,255,0.2);
-            border: 1px solid rgba(255,255,255,0.35);
-        }
-        .btn-appshub:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 18px rgba(255,255,255,0.35);
-            opacity: 0.95;
-        }
-    </style>
+  <style>
+    /* --- HOLOGRAPHIC ELEGANT APPS HUB BUTTON --- */
+    .btn-appshub {
+        display: inline-block;
+        padding: 12px 26px;
+        border-radius: 12px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        color: #0b0c10; /* readable dark text */
+        text-decoration: none;
+        background: linear-gradient(
+            135deg,
+            rgba(255,255,255,0.92) 0%,
+            rgba(245,245,255,0.92) 35%,
+            rgba(235,240,255,0.95) 60%,
+            rgba(255,255,255,0.92) 100%
+        );
+        /* Holographic shimmer overlay */
+        background-image:
+            linear-gradient(135deg,
+                rgba(139,233,253,0.45),
+                rgba(189,147,249,0.45),
+                rgba(255,202,128,0.45));
+        background-blend-mode: overlay;
+
+        border: 1px solid rgba(255,255,255,0.55);
+        box-shadow:
+            0 2px 6px rgba(255,255,255,0.15),
+            0 4px 12px rgba(0,0,0,0.25),
+            inset 0 0 8px rgba(255,255,255,0.35);
+
+        transition: 0.3s ease;
+        backdrop-filter: blur(6px);
+    }
+
+    .btn-appshub:hover {
+        transform: translateY(-3px) scale(1.02);
+        box-shadow:
+            0 4px 12px rgba(255,255,255,0.2),
+            0 8px 20px rgba(0,0,0,0.28),
+            inset 0 0 10px rgba(255,255,255,0.45);
+        opacity: 0.98;
+    }
+</style>
 
 </head>
 <body>
