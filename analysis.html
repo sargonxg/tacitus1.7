@@ -3,15 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tacitus Ontology Guide – the structural language behind conflict intelligence and resolution technologies.">
-    <title>Tacitus | Ontology Guide & Conflict Intelligence</title>
+    <meta name="description" content="Tacitus Ontology Guide – conflict intelligence and resolution technologies for mapping power, polarization, and common ground.">
+    <title>Tacitus | Ontology & Deep Conflict Analysis</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Small page-local animation helpers -->
+    <style>
+        .reveal {
+            opacity: 0;
+            transform: translateY(18px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 { transition-delay: 0.08s; }
+        .reveal-delay-2 { transition-delay: 0.16s; }
+        .reveal-delay-3 { transition-delay: 0.24s; }
+    </style>
 </head>
 <body>
     <canvas id="neural-canvas"></canvas>
 
-    <!-- NAVBAR -->
     <nav class="glass-panel">
         <div class="logo">
             TACITUS<span class="logo-mark">◳</span><span class="highlight">_</span>
@@ -25,777 +40,514 @@
             <a href="polarization.html" class="nav-pill nav-prism">Prism Lab</a>
             <a href="conflict-graph.html" class="nav-pill nav-ontology">Ontology Graph</a>
             <a href="https://concordiadiscors.org" target="_blank" rel="noopener" class="nav-pill nav-magazine">Discors Magazine</a>
-            <a href="analysis.html" class="active-link">Ontology Guide</a>
+            <a href="analysis.html" class="active-highlight">Deep Analysis &amp; Research</a>
             <a href="team.html">Who We Are</a>
             <a href="tacitus_protocol_ascii.pdf" class="btn-whitepaper" target="_blank" rel="noopener">White Paper</a>
-            <a href="mailto:hello@tacitus.me" class="btn-glow">Contact / Demo</a>
+            <a href="mailto:hello@tacitus.me" class="btn-glow">Contact / Book a Demo</a>
         </div>
     </nav>
 
     <main>
-        <!-- HERO: ONTOLOGY CONSOLE -->
+        <!-- HERO -->
         <section class="hero analysis-hero">
-            <div class="content-wrapper">
-                <div class="badge">
-                    POWERED BY TACITUS ◳ // ONTOLOGY CONSOLE // v3.3
-                </div>
-                <h1 class="glitch-text" data-text="THE LANGUAGE OF CONFLICT INTELLIGENCE">
-                    THE LANGUAGE OF CONFLICT INTELLIGENCE
+            <div class="content-wrapper reveal">
+                <div class="badge">TACITUS ◳ // ONTOLOGY GUIDE v3.3</div>
+                <h1 class="glitch-text" data-text="CONFLICT INTELLIGENCE ONTOLOGY">
+                    CONFLICT INTELLIGENCE ONTOLOGY
                 </h1>
                 <p class="subtitle">
-                    The Tacitus Ontology is a <strong>structural language for conflict and pre-conflict systems</strong>.
-                    It underpins everything Tacitus does: continuous monitoring of disputes, mapping trajectories
-                    of polarization, and generating <span class="accent">resolution pathways</span> instead of
-                    static reports.
+                    Tacitus is built for the <span class="accent">resolution gap</span> – the distance between
+                    recognizing that a situation is dangerous and actually knowing what sequence of moves could
+                    de-escalate it. Rather than treating disputes as sentiment or “angry text blobs”, Tacitus
+                    constructs a shared <strong>graph of power, polarization, and constraints</strong> that all
+                    products in the stack draw from: the Conflict Intelligence Engine, Prism Lab, and the Ontology Graph.
                 </p>
-            </div>
-        </section>
-
-        <!-- 01. WHY TACITUS EXISTS: THE RESOLUTION GAP -->
-        <section class="content-section">
-            <div class="section-label">01. RESOLUTION GAP</div>
-            <div class="glass-card wide analysis-card">
-                <div class="analysis-header">
-                    <h3>WHY A CONFLICT ONTOLOGY IS NECESSARY</h3>
-                    <span class="status-tag warning">STRUCTURAL PROBLEM</span>
-                </div>
-
-                <p class="stat-desc">
-                    Modern institutions live inside <strong>permanent turbulence</strong>:
-                    email chains, board minutes, legal memos, social media cycles, diplomatic cables.
-                    The volume of conflictual information grows faster than any team’s ability to
-                    follow its structure. That mismatch creates a <strong>Resolution Gap</strong>:
-                    we detect more friction and polarization than we can systematically resolve.
+                <p class="subtitle" style="margin-top:0.8rem;">
+                    This page documents how the ontology works: which actors occupy the graph, how relationships
+                    are encoded as vectors, how power and risk are measured, and how polarization is monitored as
+                    a <em>pre-conflict trajectory</em>.
                 </p>
 
-                <p class="stat-desc">
-                    Tacitus addresses this by treating every conflict or pre-conflict situation as a
-                    <strong>system of interacting actors, interests, constraints, and trajectories of polarization</strong>.
-                    The aim is <strong>continuous, automated understanding</strong>:
-                    who can move what, at what cost, and how today’s decisions change tomorrow’s
-                    risk of escalation or breakdown.
-                </p>
-
-                <div class="grid-3" style="margin-top:1.5rem;">
-                    <div class="stat-block">
-                        <span class="stat-label">Continuous Understanding</span>
-                        <span class="stat-val cyan">LIVE MODEL</span>
-                        <p class="stat-desc">
-                            The ontology feeds a live model of conflicts and pre-conflict tensions,
-                            updated as new information and signals arrive
-                            rather than frozen in episodic reports.
-                        </p>
+                <div class="hero-actions">
+                    <div class="app-cta-row">
+                        <a href="platform.html" class="btn-app-primary">Open Engine</a>
+                        <a href="polarization.html" class="btn-app-secondary">Explore Prism Lab</a>
+                        <a href="conflict-graph.html" class="btn-app-secondary">View Ontology Graph</a>
                     </div>
-                    <div class="stat-block">
-                        <span class="stat-label">Automated Monitoring</span>
-                        <span class="stat-val purple">EARLY WARNING</span>
-                        <p class="stat-desc">
-                            Tacitus monitors <strong>polarization trajectories</strong>,
-                            veto paths and coalition fragility, surfacing where attention,
-                            mediation and guarantees are most urgent.
-                        </p>
-                    </div>
-                    <div class="stat-block">
-                        <span class="stat-label">Resolution Technologies</span>
-                        <span class="stat-val amber">ACTIONABLE</span>
-                        <p class="stat-desc">
-                            The same structural layer powers conflict intelligence dashboards,
-                            Prism Lab polarization analysis and ontology graphs for scenario testing
-                            and resolution design.
-                        </p>
+                    <div class="associated-pub-box">
+                        <span class="pub-label">Research &amp; essays</span>
+                        <a class="link-concordia" href="https://concordiadiscors.org" target="_blank" rel="noopener">
+                            Concordia Discors Magazine
+                        </a>
+                        <span class="pub-label">
+                            Long-form reflections on liberty, pluralism, and polarization – the intellectual
+                            twin of Tacitus’ tooling.
+                        </span>
                     </div>
                 </div>
             </div>
         </section>
 
-      <!-- 02. TACITUS ONTOLOGY: STRUCTURAL RULES -->
-<section class="content-section">
-    <div class="section-label">02. TACITUS ONTOLOGY</div>
-    <div class="glass-card wide analysis-card">
-        <div class="analysis-header">
-            <h3>STRUCTURAL RULES OF ENGAGEMENT // v3.3</h3>
-            <span class="status-tag ok">ONTOLOGY STABLE</span>
-        </div>
-
-        <h4 class="hud-title">>> CIRCUITS OF POWER, NOT HEROES AND VILLAINS</h4>
-        <p class="stat-desc">
-            The ontology sits at the intersection of <strong>systems thinking</strong> (Norbert Wiener,
-            David Easton), <strong>strategic interaction</strong> (Schelling, Nash, Putnam),
-            and <strong>institutional analysis</strong> (Tsebelis, Bueno de Mesquita, Ostrom),
-            informed by political and moral philosophy (Arendt, Berlin, Habermas).
-            It assumes that outcomes emerge less from the psychology of leaders than from
-            the <strong>geometry of constraints and incentives</strong> in which they operate.
-        </p>
-
-        <p class="stat-desc">
-            Every conflict system is modeled as a circuit between six fundamental structural roles:
-        </p>
-
-        <!-- 3x2 GRID OF CARDS -->
-        <div class="ontology-card-grid">
-            
-            <!-- INCUMBENTS -->
-            <div class="ontology-card2">
-                <div class="ontology-badge2 accent-cyan">INC</div>
-                <h4 class="ontology-title">Incumbents</h4>
-                <p class="ontology-text">
-                    Actors or coalitions currently occupying the center:
-                    executives, ruling coalitions, dominant factions.
-                    Anchored in <em>survival</em> and <em>maintenance</em> logics,
-                    defending the status quo infrastructure.
-                </p>
-            </div>
-
-            <!-- CHALLENGERS -->
-            <div class="ontology-card2">
-                <div class="ontology-badge2 accent-pink">CHL</div>
-                <h4 class="ontology-title">Challengers</h4>
-                <p class="ontology-text">
-                    Reformers, opposition blocs, insurgent teams.
-                    They seek to rearrange the topology of power, often
-                    with higher risk tolerance and fewer institutional protections.
-                </p>
-            </div>
-
-            <!-- VETO PLAYERS -->
-            <div class="ontology-card2">
-                <div class="ontology-badge2 accent-amber">V</div>
-                <h4 class="ontology-title">Veto Players</h4>
-                <p class="ontology-text">
-                    Any actor whose consent is required to alter the status quo.
-                    The number, distance and cohesion of veto players determine
-                    whether change is easy, difficult, or structurally impossible.
-                </p>
-            </div>
-
-            <!-- SELECTORATES -->
-            <div class="ontology-card2">
-                <div class="ontology-badge2 accent-violet">S / W</div>
-                <h4 class="ontology-title">Selectorates</h4>
-                <p class="ontology-text">
-                    Derived from selectorate theory: broad constituencies (S) and
-                    the smaller winning coalitions (W) essential to survival.
-                    Tacitus tracks which coalitions are stable, brittle or shifting.
-                </p>
-            </div>
-
-            <!-- KINETIC / DISCURSIVE -->
-            <div class="ontology-card2">
-                <div class="ontology-badge2 accent-cyan">K / D</div>
-                <h4 class="ontology-title">Kinetic & Discursive Planes</h4>
-                <p class="ontology-text">
-                    Conflict unfolds on two orthogonal planes:
-                    physical capability (kinetic) and narrative legitimacy (discursive).
-                    Shocks in one plane reprice risk in the other.
-                </p>
-            </div>
-
-            <!-- WIN-SET GEOMETRY -->
-            <div class="ontology-card2">
-                <div class="ontology-badge2 accent-pink">Ω</div>
-                <h4 class="ontology-title">Win-Set Geometry</h4>
-                <p class="ontology-text">
-                    The mathematical intersection of outcomes acceptable
-                    to all decisive veto players. When the overlap shrinks,
-                    tensions rise; when it collapses, pre-conflict begins.
-                </p>
-            </div>
-        </div>
-
-        <p class="stat-desc" style="margin-top:1.5rem;">
-            Tacitus makes the <strong>structure visible</strong>:
-            who must move, who must be reassured, who can credibly guarantee,
-            and which sequences of steps could re-open a viable Win-Set.
-        </p>
-    </div>
-</section>
-
-
-        <!-- 03. METRICS LAYER: POWER, RISK & TRAJECTORIES -->
+        <!-- 01. TACITUS ONTOLOGY: STRUCTURAL RULES -->
         <section class="content-section">
-            <div class="section-label">03. METRICS LAYER</div>
-            <div class="glass-card wide analysis-card">
+            <div class="section-label">01. TACITUS ONTOLOGY</div>
+            <div class="glass-card wide analysis-card reveal reveal-delay-1">
                 <div class="analysis-header">
-                    <h3>POWER, RISK &amp; POLARIZATION TRAJECTORIES</h3>
+                    <h3>STRUCTURAL RULES OF ENGAGEMENT // v3.3</h3>
+                    <span class="status-tag ok">ONTOLOGY STABLE</span>
+                </div>
+
+                <h4 class="hud-title">>> CIRCUITS OF POWER, NOT HEROES AND VILLAINS</h4>
+                <p class="stat-desc">
+                    The ontology sits at the intersection of <strong>systems thinking</strong>
+                    (Wiener, Easton), <strong>strategic interaction</strong> (Schelling, Nash, Putnam),
+                    and <strong>institutional analysis</strong> (Tsebelis, Bueno de Mesquita, Ostrom),
+                    informed by political and moral philosophy (Arendt, Berlin, Habermas).
+                    It assumes that outcomes emerge less from individual psychology than from the
+                    <strong>geometry of constraints and incentives</strong> in which actors move.
+                </p>
+
+                <p class="stat-desc">
+                    Every conflict system is modeled as a circuit between abstract roles. These are the
+                    primitives that Tacitus uses when it reads email threads, draft texts, or board minutes.
+                </p>
+
+                <div class="ontology-card-grid">
+                    <!-- INCUMBENTS -->
+                    <div class="ontology-card2">
+                        <div class="ontology-badge2 accent-cyan">INC</div>
+                        <h4 class="ontology-title">Incumbents</h4>
+                        <p class="ontology-text">
+                            Actors or coalitions currently occupying the centre: executives, ruling coalitions,
+                            dominant factions. Their baseline logic is <em>survival and maintenance</em>, not
+                            transformation. In the Engine, they anchor the status-quo scenario against which all
+                            proposed changes are evaluated.
+                        </p>
+                    </div>
+
+                    <!-- CHALLENGERS -->
+                    <div class="ontology-card2">
+                        <div class="ontology-badge2 accent-pink">CHL</div>
+                        <h4 class="ontology-title">Challengers</h4>
+                        <p class="ontology-text">
+                            Those seeking to shift or displace the status quo: opposition blocs, reform coalitions,
+                            insurgent teams, activist investors. They operate under tighter resource constraints
+                            but often with higher risk tolerance. Tacitus tracks where their escalation paths
+                            intersect with systemic red lines.
+                        </p>
+                    </div>
+
+                    <!-- VETO PLAYERS -->
+                    <div class="ontology-card2">
+                        <div class="ontology-badge2 accent-amber">V</div>
+                        <h4 class="ontology-title">Veto Players</h4>
+                        <p class="ontology-text">
+                            Following Tsebelis, a veto player is any actor whose consent is required to change
+                            course: boards, key ministries, courts, pivotal shareholders, local authorities.
+                            The ontology tracks <em>how many</em> exist, <em>how far apart</em> they are,
+                            and <em>how cohesive</em> they remain. This drives Tacitus’ assessment of
+                            policy stickiness and reform difficulty.
+                        </p>
+                    </div>
+
+                    <!-- SELECTORATES -->
+                    <div class="ontology-card2">
+                        <div class="ontology-badge2 accent-violet">S / W</div>
+                        <h4 class="ontology-title">Selectorates</h4>
+                        <p class="ontology-text">
+                            Building on selectorate theory, Tacitus distinguishes between broad selectorates
+                            (those who could influence leadership change) and narrower winning coalitions
+                            (whose support is strictly necessary for survival). Changes that shrink the winning
+                            coalition or alter its composition are flagged as structurally sensitive moves.
+                        </p>
+                    </div>
+
+                    <!-- PLANES -->
+                    <div class="ontology-card2">
+                        <div class="ontology-badge2 accent-cyan">K / D</div>
+                        <h4 class="ontology-title">Kinetic &amp; Discursive Planes</h4>
+                        <p class="ontology-text">
+                            Power operates through bodies and assets (kinetic) and through narrative and
+                            legitimacy (discursive). The ontology encodes how shocks in one plane re-price
+                            risk in the other – for example, how a protest movement (discursive) increases
+                            the cost of repression (kinetic), or how a failed military action collapses a
+                            narrative of competence.
+                        </p>
+                    </div>
+
+                    <!-- WIN-SET GEOMETRY -->
+                    <div class="ontology-card2">
+                        <div class="ontology-badge2 accent-pink">Ω</div>
+                        <h4 class="ontology-title">Win-Set Geometry</h4>
+                        <p class="ontology-text">
+                            Inspired by Putnam’s two-level games, Tacitus models the space of outcomes each
+                            veto player can accept. The overlap between these spaces – the Win-Set – is where
+                            agreements are structurally viable. When that overlap shrinks or vanishes, the
+                            system moves into pre-conflict conditions and Prism Lab begins to treat polarization
+                            signals as early-warning indicators.
+                        </p>
+                    </div>
+                </div>
+
+                <p class="stat-desc" style="margin-top:1.6rem;">
+                    The goal is not to moralize the actors, but to make the <strong>structure visible</strong>:
+                    who must move, who must be reassured, who can credibly guarantee, and which sequences of
+                    steps could re-open a viable Win-Set.
+                </p>
+            </div>
+        </section>
+
+        <!-- 02. METRICS LAYER: POWER, RISK, POLARIZATION -->
+        <section class="content-section">
+            <div class="section-label">02. METRICS LAYER</div>
+            <div class="glass-card wide analysis-card reveal reveal-delay-1">
+                <div class="analysis-header">
+                    <h3>HOW THE ENGINE SCORES A CONFLICT SYSTEM</h3>
                     <span class="status-tag ok">METRICS ONLINE</span>
                 </div>
 
-                <div class="grid-4 metrics-grid">
-                    <div class="stat-block">
-                        <span class="stat-label">Power Metric</span>
-                        <span class="stat-val cyan">NODE MASS</span>
-                        <p class="stat-desc">
-                            Structural capacity to force or block change:
-                            formal authority, control of chokepoints, agenda-setting power, or
-                            capacity to impose costs on others.
+                <p class="stat-desc">
+                    Once actors and relationships are mapped, Tacitus computes a set of shared metrics.
+                    These metrics travel with the case: the Conflict Intelligence Engine uses them to
+                    surface options, Prism Lab uses them to track polarization, and the Ontology Graph
+                    visualizes them as node sizes, glows, and trajectories.
+                </p>
+
+                <div class="grid-3" style="margin-top:1.8rem;">
+                    <div class="card-cyber small">
+                        <h4>Power Metric</h4>
+                        <p>
+                            Node size in the Ontology Graph. Aggregates formal authority, control over resources,
+                            and veto capacity. Used by the Engine to identify which actors cannot be ignored in any
+                            realistic settlement, and by Prism Lab to weight whose rhetoric shifts the system.
                         </p>
                     </div>
-                    <div class="stat-block">
-                        <span class="stat-label">Risk Metric</span>
-                        <span class="stat-val red">GLOW / HEAT</span>
-                        <p class="stat-desc">
-                            Exposure to adverse outcomes:
-                            reputational collapse, loss of mandate, sanctions, economic shocks,
-                            internal splits or legal liability.
+                    <div class="card-cyber small">
+                        <h4>Risk Metric</h4>
+                        <p>
+                            Node glow intensity. Captures exposure to cost and fragility: stretched coalitions,
+                            economic dependence, reputational vulnerability, escalation incentives. High-risk nodes
+                            often become spoilers or desperate compromise-seekers; Tacitus highlights them either way.
                         </p>
                     </div>
-                    <div class="stat-block">
-                        <span class="stat-label">Coherence Metric</span>
-                        <span class="stat-val purple">INTERNAL FRICTION</span>
-                        <p class="stat-desc">
-                            Measures how internally aligned a node or coalition is.
-                            Fragmented actors speak with many voices, weakening promises
-                            and making agreements fragile in practice.
-                        </p>
-                    </div>
-                    <div class="stat-block">
-                        <span class="stat-label">Trajectory Metric</span>
-                        <span class="stat-val amber">POLARIZATION ARC</span>
-                        <p class="stat-desc">
-                            Tracks whether disagreements are stabilizing,
-                            oscillating, or hardening into identity-bound conflict.
-                            This is the early-warning layer for pre-conflict.
+                    <div class="card-cyber small">
+                        <h4>Polarization Gradient</h4>
+                        <p>
+                            Edge coloring and clustering. Measures how arguments, emotions, and narratives are
+                            separating communities over time – not just who disagrees, but how quickly
+                            <em>trust is decaying</em>. Prism Lab turns this into polarization trajectories and
+                            early-warning dashboards.
                         </p>
                     </div>
                 </div>
 
-                <!-- How apps use these metrics -->
-                <div class="grid-3" style="margin-top:1.75rem;">
-                    <div class="stat-block">
-                        <span class="stat-label">Conflict Intelligence Engine</span>
-                        <p class="stat-desc">
-                            Uses <strong>power</strong> and <strong>risk</strong> metrics to highlight
-                            pivotal actors and pressure points in active disputes,
-                            and to simulate how different decisions change exposure over time.
+                <div class="grid-3" style="margin-top:1.8rem;">
+                    <div class="card-cyber small">
+                        <h4>Common-Ground Window</h4>
+                        <p>
+                            A dynamic estimate of propositions that all key veto players could live with, even if
+                            none loves them. Computed from overlapping interests, red lines, and audience costs.
+                            This is what Tacitus calls the “negotiable corridor” – the concrete target for
+                            mediators and boards.
                         </p>
                     </div>
-                    <div class="stat-block">
-                        <span class="stat-label">Prism Lab</span>
-                        <p class="stat-desc">
-                            Leans on <strong>trajectory</strong> and <strong>coherence</strong> metrics
-                            to map polarization arcs:
-                            which coalitions are radicalizing, which moderating nodes are losing centrality,
-                            and where narrative reframing may still work.
+                    <div class="card-cyber small">
+                        <h4>Escalation Sensitivity</h4>
+                        <p>
+                            For each actor and relationship, Tacitus tracks how likely a small move is to trigger
+                            hard reactions (strikes, walk-outs, vetoes, legal challenges). It is fed back into
+                            the Engine as a constraint on sequencing: not just <em>what</em> could work, but
+                            <em>in which order</em>.
                         </p>
                     </div>
-                    <div class="stat-block">
-                        <span class="stat-label">Ontology Graph</span>
-                        <p class="stat-desc">
-                            Visualizes the same metrics across domains,
-                            allowing teams to see at a glance where power is concentrated,
-                            where risk is underpriced, and which structural reforms
-                            (new guarantees, procedures, channels) would most change the topology.
+                    <div class="card-cyber small">
+                        <h4>Deliberation Quality Signals</h4>
+                        <p>
+                            Drawing on deliberative democracy work, Tacitus tags communication streams for symmetry
+                            of voice, responsiveness, and reason-giving. Persistent asymmetries are treated as
+                            pre-conflict risk factors and can be explored in Tacitus Lab experiments.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 04. VECTOR ANATOMY (RELATIONSHIPS) -->
+        <!-- 03. ACTOR TAXONOMY: WHO OCCUPIES THE GRAPH -->
         <section class="content-section">
-            <div class="section-label">04. VECTOR ANATOMY</div>
-            <div class="glass-card wide analysis-card">
-                <div class="analysis-header">
-                    <h3>HOW POWER FLOWS THROUGH THE GRAPH</h3>
-                    <span class="status-tag ok">EDGE TYPES</span>
-                </div>
-
-                <div class="grid-2" style="margin-top:1.5rem;">
-                    <div>
-                        <h4 class="hud-title">>> HARD POWER VECTORS</h4>
-                        <ul class="terminal-list">
-                            <li>
-                                <span class="stat-val cyan">VETO</span><br>
-                                Legal or procedural kill switch:
-                                board votes, constitutional courts, treaty vetoes.
-                                Highest-value edge; overuse signals institutional sclerosis.
-                            </li>
-                            <li>
-                                <span class="stat-val red">CONFLICT</span><br>
-                                Strikes, blockades, lawsuits, kinetic force:
-                                moments where bargaining collapses into damage
-                                and actors accept material loss to defend status or identity.
-                            </li>
-                            <li>
-                                <span class="stat-val amber">FUNDING</span><br>
-                                Control of capital flows, budgets, grants:
-                                determines which projects survive and whose priorities are
-                                structurally subsidized.
-                            </li>
-                            <li>
-                                <span class="stat-val purple">DEPENDENCY</span><br>
-                                Structural reliance on energy, logistics, supply chains,
-                                data platforms, or key personnel. Often invisible until it fails.
-                            </li>
-                            <li>
-                                <span class="stat-val cyan">GUARANTEE</span><br>
-                                Security, political, or economic guarantees that make agreements
-                                credible over time: insurance, monitoring regimes, escrow rules,
-                                safe seats, face-saving language.
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="hud-title">>> SOFT POWER VECTORS</h4>
-                        <ul class="terminal-list">
-                            <li>
-                                <span class="stat-val purple">NARRATIVE</span><br>
-                                Frames, stories, leaks, symbols and metaphors
-                                that confer or strip legitimacy.
-                                Narratives decide which losses are tolerable and which are unthinkable.
-                            </li>
-                            <li>
-                                <span class="stat-val amber">PRESSURE</span><br>
-                                Protest, boycotts, campaigns, naming-and-shaming
-                                that raise the cost of inaction without direct force.
-                            </li>
-                            <li>
-                                <span class="stat-val cyan">ALLIANCE</span><br>
-                                Formal or informal pacts aggregating power;
-                                often create escalation tripwires and complicate de-escalation.
-                            </li>
-                            <li>
-                                <span class="stat-val pink">PROXY</span><br>
-                                Indirect engagement via intermediaries to lower visible risk
-                                while still shaping outcomes: intermediating militias, consultants,
-                                shell firms, or front organizations.
-                            </li>
-                            <li>
-                                <span class="stat-val purple">MEDIATION CHANNEL</span><br>
-                                Structured pathways where trust and confidentiality are sufficient
-                                for reframing and exploring concessions without immediate public cost.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-               <!-- 05. ACTOR TAXONOMY -->
-        <section class="content-section">
-            <div class="section-label">05. ACTOR TAXONOMY</div>
-            <div class="glass-card wide analysis-card">
+            <div class="section-label">03. ACTOR TAXONOMY</div>
+            <div class="glass-card wide analysis-card reveal reveal-delay-2">
                 <div class="analysis-header">
                     <h3>WHO OCCUPIES THE GRAPH</h3>
-                    <span class="status-tag ok">NODE TYPES</span>
+                    <span class="status-tag ok">NODE TYPES LOADED</span>
                 </div>
 
                 <p class="stat-desc">
-                    From a systems perspective, conflicts and trajectories of polarization emerge from the
-                    interaction of <strong>different families of actors</strong>, each with distinct mandates,
-                    resources, and vulnerabilities. The Tacitus actor ontology draws on comparative politics,
-                    IR and governance research (Tsebelis, Bueno de Mesquita, Ostrom, Keck &amp; Sikkink,
-                    Haas and others) to capture those roles in a way that is portable across cases and levels.
+                    The Tacitus ontology is deliberately <strong>cross-domain</strong>. The same primitives
+                    describe a national peace process, a corporate board dispute, a regulatory fight, or an
+                    inheritance deadlock. Below are the main actor families Tacitus uses when it rewrites
+                    raw communication into a structural map.
                 </p>
 
-                <p class="stat-desc">
-                    A single real-world organization can occupy more than one role (for example, a government
-                    can be <em>Executive</em>, <em>Funder</em> and <em>Security</em> at once). Tacitus, however,
-                    treats these as <strong>separate node types</strong>, so that power, risk and polarization
-                    can be analyzed in terms of functions, not just institutional logos.
-                </p>
-
-                <div class="grid-3" style="margin-top:1.5rem;">
-                    <!-- GOVERNANCE & AUTHORITY -->
-                    <div class="stat-block">
-                        <span class="stat-label">1. Governance &amp; Authority</span>
-                        <p class="stat-desc">
-                            These actors define and enforce the formal “rules of the game” and are central
-                            to most selectorate and veto-player configurations.
-                        </p>
-                        <p class="stat-desc">
-                            <strong>E &mdash; EXECUTIVE</strong><br>
-                            Central authority: governments, CEOs, executive boards, secretariats.
-                            Anchored in survival and continuity; highly sensitive to selectorates
-                            and legitimacy crises.
-                            <br><br>
-                            <strong>L &mdash; LEGISLATURE / ASSEMBLY</strong><br>
-                            Parliaments, councils, shareholder meetings. Convert societal conflicts
-                            into formal decisions: budgets, laws, resolutions. Often collective veto
-                            players with internal factions.
-                            <br><br>
-                            <strong>R &mdash; REGULATOR / JUDICIARY</strong><br>
-                            Courts, commissions, supervisory authorities, central banks.
-                            Translate conflicts into compliance and legal thresholds; can freeze
-                            or re-route entire trajectories with a single ruling.
-                            <br><br>
-                            <strong>O &mdash; OVERSIGHT &amp; ACCOUNTABILITY</strong><br>
-                            Audit institutions, ombuds, inspectors general, national human rights
-                            institutions, ethics bodies. Guardians of integrity and reputation;
-                            slow to act but catalytic when they do.
-                            <br><br>
-                            <strong>P &mdash; LOCAL / SUBNATIONAL AUTHORITY</strong><br>
-                            Municipalities, regional governments, site managers, local councils.
-                            Carry granular knowledge and often face the first wave of discontent
-                            when national decisions bite.
-                            <br><br>
-                            <strong>I &mdash; INTERNATIONAL / MULTILATERAL</strong><br>
-                            Intergovernmental organizations, missions and treaty bodies.
-                            Aggregate and constrain state behaviour; provide forums, monitoring,
-                            and sometimes enforcement or guarantees.
+                <div class="grid-3" style="margin-top:1.8rem;">
+                    <div class="card-cyber small">
+                        <h4>Governance &amp; Control</h4>
+                        <p>
+                            <strong>E — Executive.</strong> Governments, CEOs, secretariats, office-holders
+                            whose primary logic is survival and continuity.<br><br>
+                            <strong>R — Regulator.</strong> Courts, commissions, supervisory authorities that
+                            translate conflict into rules, thresholds, and precedent.<br><br>
+                            <strong>O — Oversight.</strong> Boards, auditors, ombuds, inspectorates – slow to act,
+                            but capable of triggering legitimacy crises when they do.
                         </p>
                     </div>
 
-                    <!-- COERCIVE & DISRUPTIVE POWER -->
-                    <div class="stat-block">
-                        <span class="stat-label">2. Coercive &amp; Disruptive Power</span>
-                        <p class="stat-desc">
-                            Actors whose leverage rests on the ability to deploy, withhold or credibly threaten
-                            physical force, disruption or withdrawal of cooperation.
-                        </p>
-                        <p class="stat-desc">
-                            <strong>K &mdash; SECURITY / MILITARY / POLICE</strong><br>
-                            Armed forces, police, intelligence, private security.
-                            Organized coercive apparatus with doctrines and rules of engagement;
-                            latent veto players in fragile systems.
-                            <br><br>
-                            <strong>A &mdash; ARMED NON-STATE ACTOR</strong><br>
-                            Rebel groups, militias, criminal cartels, paramilitaries.
-                            Command territorial, coercive and economic power outside formal hierarchies;
-                            often seek recognition or de facto veto status.
-                            <br><br>
-                            <strong>! &mdash; INSURGENT / DISRUPTOR</strong><br>
-                            Protest movements, insurgent factions, whistleblower networks,
-                            insurgent start-ups. Willing to bear high cost to overturn or delegitimize
-                            existing arrangements.
-                            <br><br>
-                            <strong>U &mdash; UNION / WORKFORCE</strong><br>
-                            Organized labor, professional corps, key guilds.
-                            Control the “metabolism” of institutions and economies through work,
-                            strikes, slowdowns or professional refusal.
-                            <br><br>
-                            <strong>G &mdash; ILLEGAL / SHADOW ECONOMY</strong><br>
-                            Organized crime, trafficking networks, illicit markets.
-                            Operate outside formal legality but shape incentives, corruption patterns,
-                            and violence risks for many other actors.
+                    <div class="card-cyber small">
+                        <h4>Coercion &amp; Labor</h4>
+                        <p>
+                            <strong>K — Security / Military.</strong> Organized coercive apparatus with doctrine,
+                            chains of command, and rules of engagement; latent veto players in fragile systems.<br><br>
+                            <strong>! — Insurgent / Disruptor.</strong> Protest movements, whistleblowers,
+                            insurgent start-ups, opposition factions willing to bear high cost to overturn
+                            existing arrangements.<br><br>
+                            <strong>U — Union / Workforce.</strong> Organized labor or professional corps, able
+                            to halt activity through strikes or slowdowns.
                         </p>
                     </div>
 
-                    <!-- CAPITAL, NARRATIVE & KNOWLEDGE -->
-                    <div class="stat-block">
-                        <span class="stat-label">3. Capital, Narrative &amp; Knowledge Infrastructure</span>
-                        <p class="stat-desc">
-                            These actors do not always hold formal authority but structure what is financially
-                            viable, narratively legitimate, and cognitively thinkable.
+                    <div class="card-cyber small">
+                        <h4>Capital &amp; Supply</h4>
+                        <p>
+                            <strong>$ — Funder.</strong> Investors, donors, sovereign funds, major clients whose
+                            exit options and risk appetite shape the feasible set of solutions.<br><br>
+                            <strong>C — Contractor.</strong> Technology vendors, service providers, consultancies
+                            delivering specialized capabilities; often structurally flexible but dependent on
+                            contracts and reputation.
                         </p>
-                        <p class="stat-desc">
-                            <strong>$ &mdash; FUNDER / CAPITAL PRINCIPAL</strong><br>
-                            Investors, donors, sovereign funds, international financial institutions,
-                            major clients. Their exit options and risk appetite define which projects,
-                            actors and peace deals are financially sustainable.
-                            <br><br>
-                            <strong>B &mdash; BUSINESS OPERATOR</strong><br>
-                            Firms that run core activities: utilities, infrastructure operators,
-                            critical supply chains, major employers. Their operational choices can
-                            stabilize or destabilize whole regions or sectors.
-                            <br><br>
-                            <strong>C &mdash; CONTRACTOR / VENDOR</strong><br>
-                            Technology providers, implementers, consultancies, private service firms.
-                            Deliver specialized capabilities; can entrench dependencies or quietly
-                            enable structural reforms.
-                            <br><br>
-                            <strong>D &mdash; DIGITAL PLATFORM / INFRASTRUCTURE</strong><br>
-                            Social media, messaging apps, cloud providers, payment rails.
-                            Their design and moderation choices decide which conflicts become salient,
-                            which voices scale, and which grievances remain invisible.
-                            <br><br>
-                            <strong>i &mdash; MEDIA &amp; INFORMATION GATEKEEPERS</strong><br>
-                            Journalists, broadcasters, investigative outlets, influential commentators.
-                            Convert events into narratives; set agendas, amplify scandal or normalize
-                            compromise.
-                            <br><br>
-                            <strong>S &mdash; CIVIL SOCIETY &amp; ADVOCACY NETWORKS</strong><br>
-                            NGOs, social movements, professional associations, faith communities,
-                            transnational advocacy networks. Work through information, symbolic,
-                            leverage and accountability politics; redefine what counts as a “just” outcome.
-                            <br><br>
-                            <strong>X &mdash; EPISTEMIC COMMUNITY / EXPERT NETWORK</strong><br>
-                            Scientific panels, policy think tanks, technical standards bodies,
-                            professional expert groups. Shape how problems are framed,
-                            what counts as evidence, and which solutions are seen as feasible.
-                            <br><br>
-                            <strong>H &mdash; HUMANITARIAN &amp; SERVICE PROVIDER</strong><br>
-                            Relief agencies, health providers, social services.
-                            Maintain social and moral baselines in crises; often hold
-                            granular, ground-truth knowledge of how policies translate into lived experience.
+                    </div>
+
+                    <div class="card-cyber small">
+                        <h4>Narrative &amp; Information</h4>
+                        <p>
+                            <strong>i — Media.</strong> Journalists, platforms, influential commentators who decide
+                            which conflicts become visible and how they are framed.<br><br>
+                            <strong>D — Digital Platform / Infrastructure.</strong> Operators of key communication
+                            and data infrastructures whose design choices silently alter which voices scale and
+                            which grievances remain invisible.
+                        </p>
+                    </div>
+
+                    <div class="card-cyber small">
+                        <h4>Civil &amp; Social Fabric</h4>
+                        <p>
+                            <strong>S — Civil Society.</strong> NGOs, professional associations, faith leaders,
+                            patient and community groups who can bless or stigmatize a course of action.<br><br>
+                            <strong>P — Local / Mayor.</strong> Municipalities, site managers, local leaders who
+                            face the first wave of discontent and hold granular knowledge of lived impacts.
+                        </p>
+                    </div>
+
+                    <div class="card-cyber small">
+                        <h4>Knowledge &amp; Technical Systems</h4>
+                        <p>
+                            Expert panels, scientific institutes, data teams, standards bodies, and AI systems
+                            themselves when they meaningfully constrain options. In Tacitus, these nodes
+                            shape what counts as “feasible” and “responsible” in a given domain.
                         </p>
                     </div>
                 </div>
 
-                <p class="stat-desc" style="margin-top:1.5rem;">
-                    Finally, Tacitus includes <strong>affected communities</strong> (households, identity groups,
-                    local constituencies) as explicit nodes when they play a structural role &mdash; for example
-                    when their withdrawal of consent, votes, labor or tacit compliance can reshape the
-                    selectorate or trigger legitimacy crises. In the ontology these appear as
-                    <em>Public / Community</em> nodes linked to executives, funders, media and civil society.
-                </p>
-
-                <p class="stat-desc">
-                    By distinguishing these actor families and letting the same institution occupy several
-                    roles at once, Tacitus can model conflicts where, for instance, a government is both
-                    an Executive and a Funder, a non-state armed group is both an Armed Actor and a de facto
-                    Local Authority, or a digital platform is simultaneously Infrastructure, Media and
-                    Regulator. That multi-role mapping is essential for realistic conflict intelligence and
-                    for designing resolution pathways that respect how power is actually distributed.
+                <p class="stat-desc" style="margin-top:1.4rem;">
+                    When Tacitus parses a new case, it tries to assign each real-world entity to one or more
+                    of these types. This is what allows the same ontology to support corporate, geopolitical,
+                    and psychological disputes without rewriting the model for each domain.
                 </p>
             </div>
         </section>
 
-
-        <!-- 06. TACITUS ONTOLOGY AGENT & DETERMINISTIC PIPELINE -->
+        <!-- 04. VECTOR ANATOMY & POLARIZATION TRAJECTORIES -->
         <section class="content-section">
-            <div class="section-label">06. ONTOLOGY AGENT</div>
-            <div class="glass-card wide analysis-card">
+            <div class="section-label">04. VECTOR ANATOMY &amp; POLARIZATION</div>
+            <div class="glass-card wide analysis-card reveal reveal-delay-1">
                 <div class="analysis-header">
-                    <h3>DETERMINISTIC PIPELINE, EXPLAINABLE REASONING</h3>
-                    <span class="status-tag ok">AGENTIC ENGINE</span>
+                    <h3>HOW RELATIONSHIPS AND POLARIZATION ARE ENCODED</h3>
+                    <span class="status-tag ok">RELATIONSHIP SCHEMA ACTIVE</span>
                 </div>
 
                 <p class="stat-desc">
-                    The <strong>Tacitus Ontology Agent</strong> is an AI-augmented reasoning system that
-                    commits messy, often emotional reality into the ontology through a
-                    <strong>deterministic, auditable pipeline</strong>. It draws on negotiation theory
-                    (Fisher &amp; Ury, Zartman), human needs approaches (Burton, Kelman),
-                    and institutional design (Ostrom, Elster) to anchor its inferences.
+                    Edges in the Tacitus graph are not generic “links”. Each relationship is typed, timed, and
+                    scored. This is what lets Tacitus move beyond pure semantic similarity and towards genuine
+                    <strong>graph-based reasoning</strong>.
                 </p>
 
-                <div class="grid-2" style="margin-top:1.5rem;">
-                    <div>
-                        <h4 class="hud-title">>> REASONING PIPELINE</h4>
-                        <ul class="terminal-list">
-                            <li><strong>1. Structural Reading</strong><br>
-                                Identify actors, mandates, red lines, and potential veto points.
-                                Separate loud actors from structurally decisive ones.</li>
-                            <li><strong>2. Ontology Mapping</strong><br>
-                                Assign actors, interests, constraints, vectors, and metrics
-                                into the Tacitus schema so cases become comparable and cumulative.</li>
-                            <li><strong>3. Scenario Generation</strong><br>
-                                Generate plausible escalation, stalemate and settlement pathways
-                                under different combinations of guarantees, coalitions and procedural moves.</li>
-                            <li><strong>4. Resolution Support</strong><br>
-                                Translate structural insights into proposals, talking points,
-                                and packages tailored to specific mandates and risks:
-                                board chairs, mediators, envoys, regulators.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="hud-title">>> BEYOND SEMANTIC SIMILARITY</h4>
-                        <p class="stat-desc">
-                            Most AI tools stop at <strong>semantic similarity</strong>:
-                            clustering texts that sound alike. Tacitus treats this as a
-                            <em>signal layer</em>, not the core.
+                <div class="grid-3" style="margin-top:1.8rem;">
+                    <div class="card-cyber small">
+                        <h4>Hard Power Vectors</h4>
+                        <p>
+                            <strong>Veto.</strong> Legal or procedural kill-switches (board votes, court rulings,
+                            treaty vetoes).<br>
+                            <strong>Dependency.</strong> Critical supply, energy, or access relationships.<br>
+                            <strong>Conflict / Coercion.</strong> Use or threat of force, strikes, sanctions.
+                            These edges drive escalation modelling and “what-if” sequences in the Engine.
                         </p>
-                        <ul class="terminal-list">
-                            <li>> Semantic search finds relevant episodes and arguments.</li>
-                            <li>> The Ontology Agent abstracts them into <strong>relational patterns</strong>:
-                                veto configurations, coalition shapes, polarization arcs.</li>
-                            <li>> Knowledge is stored as <strong>relations and trajectories</strong>,
-                                enabling agentic systems to reason over who can move what,
-                                not just over which sentences resemble each other.</li>
-                        </ul>
-                        <p class="stat-desc">
-                            The future of conflict intelligence is <strong>graph-aware and agentic</strong>:
-                            AI systems that understand power, constraints and time,
-                            and propose moves that respect both structure and ethics.
-                            Tacitus is designed explicitly for that horizon.
+                    </div>
+                    <div class="card-cyber small">
+                        <h4>Soft Power Vectors</h4>
+                        <p>
+                            <strong>Narrative.</strong> Framing, propaganda, leaks, agenda-setting.<br>
+                            <strong>Pressure.</strong> Protests, boycotts, naming-and-shaming, diplomatic signals.<br>
+                            <strong>Alliance / Proxy.</strong> Coalitions and indirect interventions that expand
+                            the scope of a conflict if one node is attacked.
+                        </p>
+                    </div>
+                    <div class="card-cyber small">
+                        <h4>Polarization Trajectories</h4>
+                        <p>
+                            Prism Lab tracks how these vectors cluster into <em>camps</em> over time: who responds
+                            to whom, which arguments harden, which communities stop listening. Polarization is
+                            treated as a <strong>precursor of conflict</strong> – the loss of deliberative capacity
+                            before kinetic action appears.
                         </p>
                     </div>
                 </div>
+
+                <p class="stat-desc" style="margin-top:1.4rem;">
+                    In practical terms, this means Tacitus does not stop at “similar sentences”. It cares about
+                    <em>who said what, to whom, under which constraints, and with what downstream effect</em>.
+                    Semantic similarity is one signal; graph structure and polarization dynamics are the backbone.
+                </p>
             </div>
         </section>
 
-        <!-- 07. POLARIZATION AS PRE-CONFLICT -->
+        <!-- 05. REASONING PIPELINE & AGENTIC MONITORING -->
         <section class="content-section">
-            <div class="section-label">07. POLARIZATION &amp; PRE-CONFLICT</div>
-            <div class="glass-card wide analysis-card">
+            <div class="section-label">05. ONTOLOGY AGENT &amp; REASONING PIPELINE</div>
+            <div class="glass-card wide analysis-card reveal reveal-delay-2">
                 <div class="analysis-header">
-                    <h3>TRACKING THE TRAJECTORIES BEFORE THEY BREAK</h3>
-                    <span class="status-tag critical">EARLY WARNING</span>
+                    <h3>FROM RAW TEXT TO STRUCTURED OPTIONS</h3>
+                    <span class="status-tag ok">DETERMINISTIC PIPELINE</span>
                 </div>
 
                 <p class="stat-desc">
-                    Polarization is not simply strong disagreement.
-                    It becomes dangerous when differences crystallize into <strong>identity boundaries</strong>,
-                    when trust in common procedures erodes, and when each side
-                    begins to treat the other as fundamentally illegitimate.
+                    Tacitus combines large language models with a <strong>deterministic ontology pipeline</strong>.
+                    The LLMs are used for controlled extraction and paraphrase; the underlying reasoning is
+                    enforced by the ontology and graph rules.
                 </p>
 
-                <p class="stat-desc">
-                    Tacitus treats polarization as a <strong>dynamic trajectory</strong>:
-                    a curve that can steepen, flatten, or bend back,
-                    depending on institutions, language, guarantees and gatekeepers.
-                </p>
-
-                <div class="grid-3" style="margin-top:1.5rem;">
-                    <div class="stat-block">
-                        <span class="stat-label">Signal Layer</span>
-                        <span class="stat-val cyan">NARRATIVE</span>
-                        <p class="stat-desc">
-                            Shifts in language, moral framing and perceived harms
-                            reveal where positions are hardening or new grievances are emerging:
-                            from “policy error” to “moral betrayal”.
+                <div class="grid-2" style="margin-top:1.6rem;">
+                    <div class="card-cyber small">
+                        <h4>1. Ingestion &amp; Normalization</h4>
+                        <p>
+                            Emails, minutes, position papers, and briefs are cleaned and segmented. Personal
+                            identifiers can be minimized or pseudonymized in sensitive contexts. The goal is to
+                            move from unstructured noise to canonical “events” and “claims”.
                         </p>
                     </div>
-                    <div class="stat-block">
-                        <span class="stat-label">Structural Layer</span>
-                        <span class="stat-val purple">TOPOLOGY</span>
-                        <p class="stat-desc">
-                            The ontology tracks whether bridging actors still exist,
-                            whether common institutions retain legitimacy,
-                            and where vetoes are being used as weapons rather than safeguards.
+                    <div class="card-cyber small">
+                        <h4>2. Ontology Tagging</h4>
+                        <p>
+                            The Tacitus Ontology Agent assigns each segment: <strong>actors</strong> (node types),
+                            <strong>relationships</strong> (vector types), <strong>interests</strong>,
+                            <strong>constraints</strong>, and early <strong>polarization cues</strong>.
+                            This step is explicit and auditable – the system can show why a passage was tagged
+                            as Veto, Dependency, or Narrative.
                         </p>
                     </div>
-                    <div class="stat-block">
-                        <span class="stat-label">Intervention Layer</span>
-                        <span class="stat-val amber">ACTION</span>
-                        <p class="stat-desc">
-                            Early warning matters only if it suggests precise moves:
-                            whom to convene, which guarantees to offer, which narratives to cool,
-                            which procedures to protect or redesign.
+                    <div class="card-cyber small">
+                        <h4>3. Graph Construction &amp; Metrics</h4>
+                        <p>
+                            The extracted elements are written into a conflict graph. Power, risk, and polarization
+                            metrics are computed on top of that graph, not inside the LLM. This is where Tacitus
+                            departs from “pure embeddings”: relationships, veto paths, and coalition geometry
+                            become first-class objects.
+                        </p>
+                    </div>
+                    <div class="card-cyber small">
+                        <h4>4. Agentic Monitoring &amp; Scenario Querying</h4>
+                        <p>
+                            Agentic workflows watch for new documents, detect structural changes (a coalition
+                            breaking, a veto actor shifting, a polarization spike), and update the map. Users can
+                            then query the case: <em>“What sequences of moves re-open a Win-Set?”</em>,
+                            <em>“Who must be reassured for this reform to stick?”</em>, or
+                            <em>“What happens if this actor exits?”</em>.
                         </p>
                     </div>
                 </div>
 
-                <p class="stat-desc" style="margin-top:1.5rem;">
-                    The <a href="polarization.html" class="accent">Prism Lab</a> builds on this ontology:
-                    it lets practitioners explore how different framings, concessions or institutional choices
-                    might bend polarization arcs before conflicts cross critical thresholds.
+                <p class="stat-desc" style="margin-top:1.4rem;">
+                    The end result is not a chat transcript, but a <strong>living conflict model</strong> that can
+                    be inspected, challenged, and iterated on – a better foundation for mediation, governance,
+                    and institutional learning.
                 </p>
             </div>
         </section>
 
-        <!-- 08. TACITUS LAB: AI, DEMOCRACY & SUBSIDIARITY -->
+        <!-- 06. TACITUS LAB: DELIBERATIVE AI & DEMOCRACY -->
         <section class="content-section">
-            <div class="section-label">08. TACITUS LAB</div>
-            <div class="glass-card wide analysis-card lab-card">
+            <div class="section-label">06. TACITUS LAB</div>
+            <div class="glass-card wide analysis-card reveal reveal-delay-1">
                 <div class="analysis-header">
-                    <h3>AI, DELIBERATION &amp; THE FUTURE OF DEMOCRATIC DECISION-MAKING</h3>
-                    <span class="status-tag ok">RESEARCH MODE</span>
+                    <h3>DELIBERATIVE AI, SUBSIDIARITY &amp; DEMOCRATIC PRACTICE</h3>
+                    <span class="status-tag warning">EXPERIMENTAL MODULE</span>
                 </div>
 
                 <p class="stat-desc">
-                    Tacitus Lab is the experimental arm of the platform.
-                    It explores how <strong>AI-mediated deliberation</strong>,
-                    <strong>multi-agent architectures</strong> and
-                    <strong>constitutional AI</strong> can support better collective decisions
-                    without replacing human judgment or responsibility.
+                    Beyond operational conflict work, Tacitus Lab explores how AI can support <strong>better
+                    democratic decision-making</strong>. The reference points here are Habermas’ theory of
+                    deliberation, Ostrom’s work on collective governance, and contemporary research on
+                    participation and digital publics.
                 </p>
 
-                <div class="grid-3" style="margin-top:1.5rem;">
-                    <div class="stat-block">
-                        <span class="stat-label">Deliberative AI</span>
-                        <p class="stat-desc">
-                            Inspired by deliberative democracy and Habermasian ideas,
-                            we test AI systems that summarize arguments fairly,
-                            surface overlapping proposals, and help groups see
-                            where they already agree more than they think.
+                <div class="grid-3" style="margin-top:1.8rem;">
+                    <div class="card-cyber small">
+                        <h4>Deliberation-Aware Simulations</h4>
+                        <p>
+                            Prototype agents that test how proposals fare under different <em>public reasons</em>,
+                            not just different vitriol. The aim is to see which arguments could be made legible
+                            across camps, and which designs reduce the temptation to bypass debate altogether.
                         </p>
                     </div>
-                    <div class="stat-block">
-                        <span class="stat-label">Constitutional &amp; Agentic Systems</span>
-                        <p class="stat-desc">
-                            Multi-agent set-ups where different AI agents play distinct roles
-                            &mdash; advocate, critic, mediator, risk officer &mdash;
-                            constrained by explicit normative rules, not opaque prompts.
+                    <div class="card-cyber small">
+                        <h4>Subsidiarity by Design</h4>
+                        <p>
+                            Experiments with architectures where local communities, boards, or teams keep control
+                            over decisions, while AI supports them with structured evidence, polarization maps,
+                            and option trees – rather than replacing their judgment.
                         </p>
                     </div>
-                    <div class="stat-block">
-                        <span class="stat-label">Subsidiarity &amp; Freedom</span>
-                        <p class="stat-desc">
-                            The aim is not technocratic control, but <strong>subsidiarity</strong>:
-                            giving decisions back to the level closest to those affected,
-                            equipped with better structural intelligence.
-                            Protecting citizens’ freedom means making power legible,
-                            not automating it away.
+                    <div class="card-cyber small">
+                        <h4>Protecting Freedom in High-Conflict Systems</h4>
+                        <p>
+                            The long-term ambition: tools that make it easier for institutions to act prudently
+                            under pressure without collapsing into coercion or paralysis. Tacitus Lab prototypes
+                            live alongside Concordia Discors essays on pluralism, dissent, and the ethics of
+                            technological mediation.
                         </p>
-                    </div>
-                </div>
-
-                <p class="stat-desc" style="margin-top:1.5rem;">
-                    We are prototyping tools where parliaments, boards, missions or movements can:
-                </p>
-                <ul class="terminal-list">
-                    <li>> run “what-if” deliberations across different value frameworks,</li>
-                    <li>> test whether proposed rules are robust under stress scenarios,</li>
-                    <li>> detect when minority viewpoints are systematically sidelined,</li>
-                    <li>> generate agenda-setting questions that widen, rather than narrow, the conversation.</li>
-                </ul>
-
-                <p class="stat-desc">
-                    Tacitus Lab sits at the intersection of conflict ontology and democratic theory:
-                    engineering systems that make it easier for free and plural societies
-                    to reach decisions they can live with &mdash; without surrendering moral agency to machines.
-                </p>
-            </div>
-        </section>
-
-        <!-- 09. CONCORDIA DISCORS WINDOW -->
-        <section class="content-section">
-            <div class="section-label">09. EDITORIAL SISTER PROJECT</div>
-            <div class="glass-card wide analysis-card">
-                <div class="analysis-header">
-                    <h3>CONCORDIA DISCORS MAGAZINE</h3>
-                    <span class="status-tag ok">ESSAY WINDOW</span>
-                </div>
-
-                <div class="grid-2" style="margin-top:1.5rem; align-items:stretch;">
-                    <div>
-                        <p class="stat-desc">
-                            <strong>Concordia Discors Magazine</strong> is the editorial counterpart to Tacitus:
-                            a long-form space for essays on liberty, conscience, pluralism,
-                            and the politics of polarization.
-                        </p>
-                        <p class="stat-desc">
-                            Where Tacitus encodes conflicts into structures and metrics,
-                            Concordia Discors dwells on <strong>experience and meaning</strong>:
-                            how people form convictions, why they cling to identities,
-                            and what it means to defend freedom under pressure.
-                        </p>
-                        <p class="stat-desc">
-                            Together, they form one project:
-                            building <strong>conflict intelligence and resolution technologies</strong>
-                            that respect both structure and soul.
-                        </p>
-                        <a href="https://concordiadiscors.org" target="_blank" rel="noopener" class="btn-accent" style="margin-top:1rem;">
-                            Visit Concordia Discors
-                        </a>
-                    </div>
-                    <div>
-                        <div class="mini-window large mini-magazine">
-                            <h4>Concordia Discors ◬</h4>
-                            <p>
-                                Essays on solitude and crowds, courage and conformity,
-                                the temptations of utopian politics and the quiet work of reconciliation.
-                            </p>
-                            <ul class="terminal-list">
-                                <li>> Polarization as spiritual, social and institutional fracture.</li>
-                                <li>> How free speech, plural media and civic virtue interact.</li>
-                                <li>> What “discordant harmony” looks like in real institutions.</li>
-                            </ul>
-                            <p class="stat-desc" style="margin-top:0.5rem;">
-                                Built as the narrative companion to Tacitus:
-                                a space where ideas are tested before they become architecture and code.
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <!-- CTA -->
-        <section class="content-section" style="text-align:center;">
-            <h2 class="section-heading">>> Deploy the Tacitus Ontology on Your Conflicts</h2>
-            <p style="color: var(--text-muted); max-width: 640px; margin: 1rem auto 2rem;">
-                Tacitus can be deployed as a secure conflict-intelligence layer for boards, ministries,
-                missions and institutions. We configure the ontology to your mandates and risk profile,
-                then work with you to build a continuous early-warning and resolution support system.
-            </p>
-            <a href="mailto:deploy@tacitus.me" class="btn-accent">Start a Pilot</a>
         </section>
     </main>
 
     <script src="script.js"></script>
+    <!-- Only needed if you wired the deliberation.js module & D3 as drafted -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="deliberation.js"></script>
+
+    <!-- Scroll-reveal animation hook -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.15 });
+
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        });
+    </script>
 
     <footer class="site-footer">
         <div class="footer-inner">
@@ -804,7 +556,7 @@
                     TACITUS<span class="logo-mark">◳</span>
                 </div>
                 <p class="footer-tagline">
-                    Tacitus &mdash; Conflict intelligence for a free, plural world.
+                    Tacitus &mdash; Clarity in conflict. Structure in noise.
                 </p>
             </div>
             <div class="footer-columns">
@@ -817,7 +569,7 @@
                 </div>
                 <div class="footer-col">
                     <h4>About</h4>
-                    <a href="analysis.html">Ontology Guide</a>
+                    <a href="analysis.html">Deep Analysis &amp; Research</a>
                     <a href="team.html">Who We Are</a>
                     <a href="tacitus_protocol_ascii.pdf" target="_blank" rel="noopener">White Paper</a>
                 </div>
