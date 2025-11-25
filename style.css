@@ -1492,3 +1492,104 @@ footer {
         border-bottom: none;
     }
 }
+
+/* ============================================================
+   ONTOLOGY GRID + CARDS  (Tacitus Structural Ontology v3.3)
+   ============================================================ */
+
+.ontology-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.8rem;
+    margin-top: 2rem;
+}
+
+.ontology-card2 {
+    background: linear-gradient(
+        145deg,
+        rgba(15, 23, 42, 0.96),
+        rgba(15, 23, 42, 0.88)
+    );
+    border: 1px solid rgba(148, 163, 184, 0.22);
+    border-radius: 16px;
+    padding: 1.6rem 1.5rem 1.4rem;
+    position: relative;
+    transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+    backdrop-filter: blur(8px);
+}
+
+.ontology-card2:hover {
+    transform: translateY(-6px);
+    border-color: var(--neon-cyan);
+    box-shadow: 0 0 22px rgba(0, 243, 255, 0.25);
+}
+
+.ontology-badge2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 4px 10px;
+    margin-bottom: 0.9rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* ——— Individual Accent Colors ——— */
+.accent-cyan {
+    border-color: var(--neon-cyan) !important;
+    color: var(--neon-cyan) !important;
+    box-shadow: 0 0 12px rgba(0, 243, 255, 0.35);
+}
+
+.accent-pink {
+    border-color: var(--neon-purple) !important;
+    color: var(--neon-purple) !important;
+    box-shadow: 0 0 12px rgba(188, 19, 254, 0.32);
+}
+
+.accent-amber {
+    border-color: var(--neon-amber) !important;
+    color: var(--neon-amber) !important;
+    box-shadow: 0 0 12px rgba(255, 179, 71, 0.32);
+}
+
+.accent-violet {
+    border-color: #a855f7 !important;
+    color: #a855f7 !important;
+    box-shadow: 0 0 12px rgba(168, 85, 247, 0.32);
+}
+
+.ontology-title {
+    font-family: var(--font-mono);
+    font-size: 0.95rem;
+    color: #ffffff;
+    margin-bottom: 0.55rem;
+    letter-spacing: 0.04em;
+}
+
+.ontology-text {
+    font-size: 0.88rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+}
+
+/* ============================================================
+   MOBILE LAYOUT — 2 cards per line
+   ============================================================ */
+@media (max-width: 860px) {
+    .ontology-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 540px) {
+    .ontology-card-grid {
+        grid-template-columns: 1fr;
+    }
+}
