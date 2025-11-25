@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tacitus ◳ — Team</title>
+    <meta name="description" content="The team behind Tacitus ◳. Architects of conflict intelligence and resolution technologies." />
+    <title>Tacitus ◳ | Team & Mission</title>
 
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -12,140 +13,212 @@
 <body>
     <canvas id="neural-canvas"></canvas>
 
-    <!-- NAVBAR -->
     <nav class="glass-panel">
         <div class="logo">
-            <span class="logo-mark">◳</span> TACITUS
+            TACITUS<span class="logo-mark">◳</span><span class="highlight">_</span>
         </div>
-        <div class="nav-links">
-            <a href="/" class="">Home</a>
-            <a href="/analysis.html">Ontology</a>
-            <a href="/conflict-graph.html" class="nav-pill nav-ontology">Ontology Graph</a>
-            <a href="/prism.html" class="nav-pill nav-prism">Prism Lab</a>
-            <a href="/magazine.html" class="nav-pill nav-magazine">Magazine</a>
-            <a href="/team.html" class="active-highlight">Team</a>
-        </div>
-        <div class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('active')">
+        <div class="hamburger" id="hamburger">
             <span></span><span></span><span></span>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="https://apps.tacitus.me/" class="btn-appshub">Access Apps Hub</a>
+            <a href="analysis.html">Ontology Explained</a>
+            <a href="team.html" class="active-highlight">Who We Are</a>
+            <a href="mailto:hello@tacitus.me" class="btn-glow">Contact Us</a>
         </div>
     </nav>
 
-    <!-- ========================= -->
-    <!-- 00. WHO WE ARE            -->
-    <!-- ========================= -->
-    <section class="content-section">
-        <div class="section-label">00. WHO WE ARE</div>
-
-        <div class="glass-card wide analysis-card">
-            <div class="analysis-header">
-                <h3>OUR PURPOSE</h3>
-                <span class="status-tag ok">PRE-SEED</span>
+    <main>
+        <section class="hero analysis-hero">
+            <div class="content-wrapper">
+                <div class="badge">MISSION PROFILE // BUILDING THE O.S. OF PEACE</div>
+                <h1 class="glitch-text" data-text="ARCHITECTS OF RESOLUTION">
+                    ARCHITECTS OF RESOLUTION
+                </h1>
+                <p class="subtitle">
+                    We are a small, disciplined team of conflict strategists, systems architects, and engineers building the <strong>Resolution Stack</strong> for the 21st century.
+                </p>
             </div>
+        </section>
 
-            <p class="stat-desc">
-                Tacitus.me is building a world-class <strong>Conflict Intelligence &amp; Resolution Technology Suite</strong> —
-                tools designed to help people understand conflict, prevent escalation, and uncover common ground.
-            </p>
-
-            <p class="stat-desc">
-                We believe conflict is information asymmetry and that conflict clarity should be for everyone. Our systems help families, executives, mediators,
-                negotiators, and institutions see structure where there is noise — mapping polarization,
-                diagnosing constraints, and revealing resolution pathways before crises harden.
-            </p>
-
-            <p class="stat-desc" style="margin-bottom: 2rem;">
-                We are early, but our mission is already clear:
-                <strong>AI should strengthen deliberation, widen common ground, protect freedom and conscience — not accelerate division.</strong>
-            </p>
-
-            <h4 class="hud-title">>> TEAM & OPEN ROLES</h4>
-
-            <!-- ========================= -->
-            <!-- TEAM CARDS GRID          -->
-            <!-- ========================= -->
-            <div class="ontology-card-grid">
-
-                <!-- GC — Founder -->
-                <div class="ontology-card2">
-                    <div class="ontology-badge2 accent-cyan">FOUNDER &amp; CEO</div>
-                    <h4 class="ontology-title">GC — Resolution Architect</h4>
-                    <p class="ontology-text">
-                        Background in international politics, conflict systems, and multilateral diplomacy.
-                        Specializes in polarization dynamics, organizational behavior, and decision structures.
-                        Founder of Tacitus.me ◳ and founding editor at <em>Concordia Discors Magazine</em>.  
-                        A lifelong lover of baroque music, harmony, and counterpoint — influences that shape the
-                        Tacitus ethos: <strong>clarity, balance, structure</strong>.
-                    </p>
+        <section class="content-section">
+            <div class="section-label">01. OUR PURPOSE</div>
+            <div class="glass-card wide">
+                <div class="analysis-header">
+                    <h3>WHY WE BUILD</h3>
+                    <span class="status-tag ok">PRE-SEED</span>
                 </div>
 
-                <!-- CTO — Hiring -->
-                <div class="ontology-card2">
-                    <div class="ontology-badge2 accent-pink">CTO — SEARCHING</div>
-                    <h4 class="ontology-title">Resolution Technologist</h4>
-                    <p class="ontology-text">
-                        Architect the Tacitus Conflict Intelligence Engine, Ontology Graph, and Prism Lab.
-                        Ideal experience: multimodal RAG, agentic systems, graph reasoning, distributed architectures,
-                        and conflict-sensitive alignment.  
-                        A founding-level role for someone who believes AI can
-                        <strong>reduce conflict instead of amplifying it</strong>.
-                    </p>
+                <div class="grid-2">
+                    <div>
+                        <p class="stat-desc">
+                            Tacitus.me is building a world-class <strong>Conflict Intelligence &amp; Resolution Technology Suite</strong>. We believe conflict is information asymmetry, and that clarity should be a public good.
+                        </p>
+                        <p class="stat-desc">
+                            Our systems help families, boards, ministries, and mediators see structure where there is noise—mapping polarization, diagnosing constraints, and revealing resolution pathways before crises harden.
+                        </p>
+                        <p class="stat-desc" style="color: var(--neon-cyan); margin-top: 1rem;">
+                            <strong>Mission:</strong> AI should strengthen deliberation, widen common ground, and protect conscience—not accelerate division.
+                        </p>
+                    </div>
+                    
+                    <div class="metrics-grid">
+                        <div class="stat-block">
+                            <span class="stat-label">Core Value 01</span>
+                            <span class="stat-val cyan">CLARITY</span>
+                            <p class="stat-desc" style="font-size:0.75rem;">Resolution begins when the geometry of the conflict is visible to all sides.</p>
+                        </div>
+                        <div class="stat-block">
+                            <span class="stat-label">Core Value 02</span>
+                            <span class="stat-val purple">AGENCY</span>
+                            <p class="stat-desc" style="font-size:0.75rem;">We do not automate decisions. We automate the intelligence needed to make them.</p>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Conflict Strategist — Hiring -->
-                <div class="ontology-card2">
-                    <div class="ontology-badge2 accent-amber">SEARCHING</div>
-                    <h4 class="ontology-title">Conflict Strategist</h4>
-                    <p class="ontology-text">
-                        An applied-intelligence role bridging politics, psychology, organizational behavior,
-                        and systems design.  
-                        Translate real disputes into structured ontologies, map veto paths and leverage points,
-                        diagnose polarization trajectories, and develop early-warning indicators.
-                        Ideal for candidates who understand both theory and lived institutional complexity.
-                    </p>
-                </div>
-
             </div>
+        </section>
 
-            <p class="stat-desc" style="margin-top: 2rem;">
-                We are not formally accepting applications at this stage.  
-                But — if you know someone exceptionally passionate about conflicts and resolution tech, who feels called to build this field —  
-                <strong>email us at <a href="mailto:hello@tacitus.me" style="color:var(--neon-cyan);">hello@tacitus.me</a></strong>.
+        <section class="content-section">
+            <div class="section-label">02. THE BUILDERS</div>
+            <div class="glass-card wide">
+                <div class="analysis-header">
+                    <h3>ACTIVE ROSTER</h3>
+                    <span class="status-tag ok">OPERATIONAL</span>
+                </div>
+
+                <div class="ontology-card-grid">
+                    <div class="ontology-card2">
+                        <div class="ontology-badge2 accent-cyan">FOUNDER & CEO</div>
+                        <h4 class="ontology-title">Resolution Architect</h4>
+                        <span class="actor-code" style="font-size: 0.9rem; margin-bottom: 1rem;">[ GC ]</span>
+                        <p class="ontology-text">
+                            Background in international politics, conflict systems, and multilateral diplomacy.
+                            Specializes in polarization dynamics and decision structures.
+                            Founding editor at <em style="color: var(--neon-cyan)">Concordia Discors</em>.
+                        </p>
+                        <p class="stat-desc" style="margin-top:1rem; font-size:0.75rem; border-top:1px dashed rgba(255,255,255,0.1); padding-top:0.5rem;">
+                            Driving Ethos: <strong>Clarity, Balance, Structure.</strong>
+                        </p>
+                    </div>
+
+                    <div class="ontology-card2">
+                        <div class="ontology-badge2 accent-pink">OPEN ROLE</div>
+                        <h4 class="ontology-title">Principal Technologist</h4>
+                        <span class="actor-code" style="font-size: 0.9rem; margin-bottom: 1rem;">[ SEARCHING ]</span>
+                        <p class="ontology-text">
+                            Architecting the Conflict Intelligence Engine and Ontology Graph.
+                            Ideal profile: Multimodal RAG, agentic systems, graph reasoning, and conflict-sensitive alignment.
+                        </p>
+                        <p class="stat-desc" style="margin-top:1rem; font-size:0.75rem; border-top:1px dashed rgba(255,255,255,0.1); padding-top:0.5rem;">
+                            Mission: <strong>Code that cools conflict.</strong>
+                        </p>
+                    </div>
+
+                    <div class="ontology-card2">
+                        <div class="ontology-badge2 accent-amber">OPEN ROLE</div>
+                        <h4 class="ontology-title">Conflict Strategist</h4>
+                        <span class="actor-code" style="font-size: 0.9rem; margin-bottom: 1rem;">[ SEARCHING ]</span>
+                        <p class="ontology-text">
+                            An applied-intelligence role bridging politics, psychology, and systems design.
+                            Translates real disputes into structured ontologies, mapping veto paths and leverage points.
+                        </p>
+                        <p class="stat-desc" style="margin-top:1rem; font-size:0.75rem; border-top:1px dashed rgba(255,255,255,0.1); padding-top:0.5rem;">
+                            Mission: <strong>Translate noise into signal.</strong>
+                        </p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem; text-align: center;">
+                    <p class="stat-desc">
+                        We are not formally accepting applications. However, if you feel called to build this field:<br>
+                        <a href="mailto:hello@tacitus.me" style="color: var(--neon-cyan); text-decoration: none; border-bottom: 1px solid var(--neon-cyan);">hello@tacitus.me</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="section-label">03. THE ETHOS</div>
+            <div class="glass-card wide">
+                <div class="analysis-header">
+                    <h3>OPERATING PRINCIPLES</h3>
+                    <span class="status-tag ok">IMMUTABLE</span>
+                </div>
+
+                <div class="grid-2">
+                    <div class="vector-box">
+                        <h4 class="hud-title">>> DESIGN PHILOSOPHY</h4>
+                        <ul class="vector-list">
+                            <li class="vector-item">
+                                <span class="vector-name" style="color: var(--neon-cyan)">Neutrality as Engineering</span>
+                                <span class="vector-desc">The tool does not take sides. It reveals the geometry of the problem so humans can solve it.</span>
+                            </li>
+                            <li class="vector-item">
+                                <span class="vector-name" style="color: var(--neon-purple)">Privacy as Sovereignty</span>
+                                <span class="vector-desc">Conflict data is toxic waste if leaked. Our architecture is air-gapped and local-first by design.</span>
+                            </li>
+                            <li class="vector-item">
+                                <span class="vector-name" style="color: var(--neon-amber)">Resolution, Not Engagement</span>
+                                <span class="vector-desc">We optimize for agreement and closure, not "time on site" or outrage loops.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="display: flex; align-items: center; justify-content: center; padding: 2rem;">
+                        <div style="text-align: center;">
+                            <h1 style="font-size: 4rem; margin: 0; color: rgba(255,255,255,0.1);">◳</h1>
+                            <p class="subtitle" style="margin-top: 1rem; font-size: 0.9rem;">
+                                "Peace is not the absence of conflict, but the presence of creative alternatives for responding to conflict."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section" style="text-align:center; padding-bottom: 6rem;">
+            <h2 class="section-heading">>> Join the Resolution Network</h2>
+            <p style="color: var(--text-muted); max-width: 600px; margin: 1rem auto 2.5rem;">
+                Follow our research, read the magazine, or deploy the engine.
             </p>
-        </div>
-    </section>
+            <a href="mailto:hello@tacitus.me" class="btn-accent">Get in Touch</a>
+        </section>
 
-    <!-- FOOTER -->
+    </main>
+
+    <script src="script.js"></script>
+
     <footer class="site-footer">
         <div class="footer-inner">
-
             <div class="footer-brand">
-                <div class="footer-logo"><span class="logo-mark">◳</span> TACITUS</div>
-                <div class="footer-tagline">Conflict Intelligence & Resolution Technologies</div>
+                <div class="footer-logo">
+                    TACITUS<span class="logo-mark">◳</span>
+                </div>
+                <p class="footer-tagline">
+                    Tacitus &mdash; Clarity in conflict. Structure in noise.
+                </p>
             </div>
-
             <div class="footer-columns">
                 <div class="footer-col">
-                    <h4>Navigate</h4>
-                    <a href="/">Home</a>
-                    <a href="/analysis.html">Ontology</a>
-                    <a href="/conflict-graph.html">Graph</a>
-                    <a href="/prism.html">Prism Lab</a>
+                    <h4>Navigation</h4>
+                    <a href="index.html">Home</a>
+                    <a href="https://apps.tacitus.me/">Resolution Tools (Apps Hub)</a>
+                    <a href="analysis.html">Ontology Explained</a>
+                    <a href="team.html">Who We Are</a>
                 </div>
                 <div class="footer-col">
-                    <h4>Company</h4>
-                    <a href="/team.html">Team</a>
-                    <a href="mailto:hello@tacitus.me">Contact</a>
+                    <h4>Contact</h4>
+                    <a href="mailto:hello@tacitus.me">Contact Us</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Access</h4>
+                    <a href="https://apps.tacitus.me/" class="btn-glow" style="padding: 6px 12px; font-size: 0.7rem;">Apps Hub Login</a>
                 </div>
             </div>
-
             <div class="footer-meta">
-                <span> Tacitus.me ◳ </span>
-                <span>Built for clarity in conflict.</span>
+                <span>© 2025 Tacitus.me</span>
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
-
